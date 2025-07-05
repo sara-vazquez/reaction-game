@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.wavy-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.wavy-circle {
+  --s: 300px;
+
+  width: var(--s); 
+  background: #ff8400;
+  aspect-ratio: 1;
+  --g:/calc(var(--s)*0.188) calc(var(--s)*0.188) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
+  mask: calc(50% + var(--s)*0.381) calc(50% + var(--s)*0) var(--g),calc(50% + var(--s)*0.33) calc(50% + var(--s)*0.19) var(--g),calc(50% + var(--s)*0.19) calc(50% + var(--s)*0.33) var(--g),calc(50% + var(--s)*0) calc(50% + var(--s)*0.381) var(--g),calc(50% + var(--s)*-0.19) calc(50% + var(--s)*0.33) var(--g),calc(50% + var(--s)*-0.33) calc(50% + var(--s)*0.19) var(--g),calc(50% + var(--s)*-0.381) calc(50% + var(--s)*0) var(--g),calc(50% + var(--s)*-0.33) calc(50% + var(--s)*-0.19) var(--g),calc(50% + var(--s)*-0.19) calc(50% + var(--s)*-0.33) var(--g),calc(50% + var(--s)*0) calc(50% + var(--s)*-0.381) var(--g),calc(50% + var(--s)*0.19) calc(50% + var(--s)*-0.33) var(--g),calc(50% + var(--s)*0.33) calc(50% + var(--s)*-0.19) var(--g),radial-gradient(calc(var(--s)*0.45),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0.51) calc(50% + var(--s)*0.137) var(--g),calc(50% + var(--s)*0.373) calc(50% + var(--s)*0.373) var(--g),calc(50% + var(--s)*0.137) calc(50% + var(--s)*0.51) var(--g),calc(50% + var(--s)*-0.137) calc(50% + var(--s)*0.51) var(--g),calc(50% + var(--s)*-0.373) calc(50% + var(--s)*0.373) var(--g),calc(50% + var(--s)*-0.51) calc(50% + var(--s)*0.137) var(--g),calc(50% + var(--s)*-0.51) calc(50% + var(--s)*-0.137) var(--g),calc(50% + var(--s)*-0.373) calc(50% + var(--s)*-0.373) var(--g),calc(50% + var(--s)*-0.137) calc(50% + var(--s)*-0.51) var(--g),calc(50% + var(--s)*0.137) calc(50% + var(--s)*-0.51) var(--g),calc(50% + var(--s)*0.373) calc(50% + var(--s)*-0.373) var(--g),calc(50% + var(--s)*0.51) calc(50% + var(--s)*-0.137) var(--g);
+}

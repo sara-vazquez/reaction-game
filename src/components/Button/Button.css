@@ -1,0 +1,16 @@
+.btnAction {
+    width: 120px;
+    border-radius: 50px;
+    padding: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #0b0829;
+    color: #8fa0d8;
+    transition: border-color 0.25s;
+    border: none;
+}
+
+.btnAction:hover {
+    background-color: #1d1570;
+}
